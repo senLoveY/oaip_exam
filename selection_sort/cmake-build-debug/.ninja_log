@@ -1,0 +1,5 @@
+# ninja log v5
+0	295	1718493269960813365	CMakeFiles/selection_sort.dir/main.cpp.o	51d603c93eacdf26
+297	329	1718493269995018448	selection_sort	f0b5e7e36dbed955
+2	256	1718493349632621766	CMakeFiles/selection_sort.dir/main.cpp.o	51d603c93eacdf26
+256	287	1718493349664218875	selection_sort	f0b5e7e36dbed955

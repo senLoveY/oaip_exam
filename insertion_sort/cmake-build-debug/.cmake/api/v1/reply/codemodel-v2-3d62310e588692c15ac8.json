@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "insertion_sort",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "insertion_sort::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-insertion_sort-Debug-856b7ca362cc33f980a7.json",
+					"name" : "insertion_sort",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/pavel_arsenovich/Documents/Files/\u0411\u0413\u0423\u0418\u0420/\u041e\u0410\u0438\u041f/\u0441\u043e\u0440\u0442\u0438\u0440\u043e\u043a\u0438/insertion_sort/cmake-build-debug",
+		"source" : "/Users/pavel_arsenovich/Documents/Files/\u0411\u0413\u0423\u0418\u0420/\u041e\u0410\u0438\u041f/\u0441\u043e\u0440\u0442\u0438\u0440\u043e\u043a\u0438/insertion_sort"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
