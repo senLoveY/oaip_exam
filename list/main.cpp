@@ -23,7 +23,8 @@ struct list {
         TNode *spt = new TNode;
         spt->inf = inf;
         spt->right = nullptr;
-        // если элементы отсутсвуют
+        spt->left = nullptr; // Инициализация left
+        // если элементы отсутствуют
         if (!front) {
             front = back = spt;
             return;
@@ -73,22 +74,21 @@ struct list {
     void del(int x) {
         TNode *spt = search(x);
         if (!spt) return;
-        if (front == back) {
-            front = nullptr;
-            back = nullptr;
+
+        // Удаление элемента
+        if (spt->left) {
+            spt->left->right = spt->right;
         } else {
-            if (spt->left) {
-                spt->left->right = spt->right;
-            } else {
-                front = spt->right;
-            }
-            if (spt->right) {
-                spt->right->left = spt->left;
-            } else {
-                back = spt->left;
-            }
-            delete spt;
+            front = spt->right;
         }
+
+        if (spt->right) {
+            spt->right->left = spt->left;
+        } else {
+            back = spt->left;
+        }
+
+        delete spt;
     }
 
     // добавление элемента после заданного
@@ -123,22 +123,27 @@ int main() {
     }
 
     s.print();
-
+    cout << endl << "Insert element to delete:" << endl;
     int x;
     cin >> x;
-    s.del(6);
+    s.del(x);
     s.print();
-
+    cout << endl;
+    cout << endl << "Insert element to push:" << endl;
     int x1;
     cin >> x1;
-    s.push_left(s.search(x), x1);
+    cout << endl << "Insert element to search for:" << endl;
+    int x2;
+    cin >> x2;
+
+    s.push_left(s.search(x2), x1);
     s.print();
 
     while (!s.empty()) {
         s.pop();
     }
     if (s.empty()) {
-        cout << "List is empty" << endl; // Используем "List"
+        cout << endl << "List is empty" << endl;
     }
     return 0;
 }

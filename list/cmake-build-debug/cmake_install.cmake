@@ -1,4 +1,4 @@
-# Install script for directory: /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/стеки/stack
+# Install script for directory: /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/oaip_exam/list
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/стеки/stack/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/oaip_exam/list/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

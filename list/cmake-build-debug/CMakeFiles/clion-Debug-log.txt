@@ -1,4 +1,13 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/стеки/stack -B /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/стеки/stack/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/oaip_exam/list -B /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/oaip_exam/list/cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
 -- The C compiler identification is AppleClang 15.0.0.15000309
 -- The CXX compiler identification is AppleClang 15.0.0.15000309
 -- Detecting C compiler ABI info
@@ -13,4 +22,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done (0.5s)
 -- Generating done (0.0s)
--- Build files have been written to: /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/стеки/stack/cmake-build-debug
+-- Build files have been written to: /Users/pavel_arsenovich/Documents/Files/БГУИР/ОАиП/oaip_exam/list/cmake-build-debug
