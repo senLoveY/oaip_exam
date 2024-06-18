@@ -70,7 +70,7 @@ struct TTree {
 
 
     void pop(int x) {
-        TNode *del = root, *pdel = nullptr, *rep = nullptr, *prep = nullptr;
+        TNode *del = root, *pdel = nullptr;
 
         // Поиск удаляемого узла
         while (del && del->inf != x) {
@@ -83,46 +83,38 @@ struct TTree {
         }
 
         if (!del) {
-            cout << endl << "Узел не найден" << endl;
+            cout << "Узел не найден" << endl;
             return;
         }
 
-        // Поиск замещающего узла
-        prep = del;
+        // Если у удаляемого узла нет левого поддерева
         if (!del->left) {
-            rep = del->right;
-        } else {
-            rep = del->left;
-            while (rep->right != nullptr) {
-                prep = rep;
-                rep = rep->right;
-            }
-        }
-
-        // Замена узла
-        if (rep) { // Если не лист
-            if (prep->left == rep) {
-                prep->left = rep->left;
+            if (del == root) {
+                root = del->right;
+            } else if (pdel->left == del) {
+                pdel->left = del->right;
             } else {
-                prep->right = rep->left;
+                pdel->right = del->right;
             }
-            rep->right = del->right;
-            rep->left = del->left;
+            delete del;
+            return;
         }
 
-        // Подключение замещающего узла
-        if (del == root) {
-            root = rep; // Если удаляемый узел - корень дерева
+        // Если у удаляемого узла есть левое поддерево
+        TNode *rep = del->left;
+        TNode *prep = del;
+        while (rep->right != nullptr) {
+            prep = rep;
+            rep = rep->right;
+        }
+
+        del->inf = rep->inf;
+        if (prep->left == rep) {
+            prep->left = rep->left;
         } else {
-            if (pdel->left == del) {
-                pdel->left = rep;
-            } else {
-                pdel->right = rep;
-            }
+            prep->right = rep->left;
         }
-
-        // Удаление узла
-        delete del;
+        delete rep;
     }
 
     int search_max() {
