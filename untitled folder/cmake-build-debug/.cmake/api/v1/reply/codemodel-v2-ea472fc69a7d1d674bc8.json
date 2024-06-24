@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "tree",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tree-Debug-4b3734192bf1b03462dc.json",
+					"name" : "tree",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/pavel_arsenovich/Documents/Files/\u0411\u0413\u0423\u0418\u0420/\u041e\u0410\u0438\u041f/oaip_exam/tree/cmake-build-debug",
+		"source" : "/Users/pavel_arsenovich/Documents/Files/\u0411\u0413\u0423\u0418\u0420/\u041e\u0410\u0438\u041f/oaip_exam/tree"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
